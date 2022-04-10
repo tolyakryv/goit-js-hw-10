@@ -13,7 +13,7 @@ ref.input.addEventListener(
   'input',
   debounce(() => {
     const searchName = ref.input.value.trim();
-    if (searchName.length > 1) {
+    if (searchName.length > 0) {
       fetchCountries(searchName);
     } else {
       ref.list.innerHTML = '';
